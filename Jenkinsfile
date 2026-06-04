@@ -17,6 +17,7 @@ pipeline {
             steps {
                 script {
                     git branch: 'main',
+                        credentialsId: repositoryCredentials,
                         url: repository
                 }
             }
